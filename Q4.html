@@ -1,0 +1,34 @@
+!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <script>
+        let calculator = {
+            a: 0,
+            b: 0,
+
+            read() {
+                this.a = parseFloat(prompt("Enter value for a:"));
+                this.b = parseFloat(prompt("Enter value for b:"));
+            },
+
+            sum() {
+                return this.a + this.b;
+            },
+
+            mul() {
+                return this.a * this.b;
+            }
+        };
+
+        calculator.read();
+        alert(calculator.sum());
+        alert(calculator.mul());
+    </script>
+</body>
+
+</html>
